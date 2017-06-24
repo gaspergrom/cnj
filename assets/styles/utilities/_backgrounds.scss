@@ -1,0 +1,45 @@
+/*----------------------------------*\
+    Backgruonds
+\*----------------------------------*/
+/* background properties */
+.bg {
+
+    /* background image */
+    &--image {
+        background: no-repeat 50% 50%;
+        background-size: cover;
+    }
+    &--box{
+        background-image: linear-gradient(to right, $color-green-alpha 0%,$color-green-alpha 30%,#ffffff 31%,#ffffff 100%);
+        position: relative;
+        @media #{$sm-down} {
+            background: $color-green-alpha;
+        }
+    }
+    &--mobile-green-alpha{
+        @media #{$sm-down} {
+            background-color: $color-green-alpha;
+        }
+    }
+    /* background-colors */
+    @each $name, $value in $colors{
+        &--#{$name}{
+            background-color: #{$value};
+
+            &.hover-d{
+                @include transition();
+
+                &:hover{
+                    background-color: darken($value, $darken);
+                }
+            }
+            &.hover-l{
+                @include transition();
+
+                &:hover{
+                    background-color: lighten($value, $lighten);
+                }
+            }
+        }
+    }
+}

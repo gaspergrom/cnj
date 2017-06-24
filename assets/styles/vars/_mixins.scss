@@ -1,0 +1,29 @@
+/*----------------------------------*\
+    mixins
+\*----------------------------------*/
+
+
+/* Transitions */
+@mixin transition($args: 200ms) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/* Transforms */
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+/* Box-shaddow */
+@mixin box-shadow($args) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  -o-box-shadow: $args;
+  box-shadow: $args;
+}

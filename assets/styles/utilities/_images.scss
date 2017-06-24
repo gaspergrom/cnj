@@ -1,0 +1,23 @@
+/*----------------------------------*\
+    Images
+\*----------------------------------*/
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    /* round image */
+    &--circle {
+        border-radius: 50%;
+    }
+    &--mobile-full{
+        @media #{$sm-down} {
+            padding-bottom: 100%;
+        }
+    }
+    &--mobile-half{
+        @media #{$sm-down} {
+            padding-bottom: 50%;
+        }
+    }
+}

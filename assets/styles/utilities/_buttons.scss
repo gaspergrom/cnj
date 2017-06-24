@@ -1,0 +1,18 @@
+/*----------------------------------*\
+    Buttons
+\*----------------------------------*/
+.btn {
+  border: 0;
+  padding: 7px 15px;
+  font-size: 16px;
+  &--xs-full{
+    @media #{$xs-down} {
+      width: 100%;
+      text-align: center !important;
+      span{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/*----------------------------------*\
+    Footer
+\*----------------------------------*/
+.footer {
+  background: $color-grey-dark;
+  &__social{
+    img{
+      @include transform(rotate(0deg));
+      @include transition();
+      &:hover{
+        @include transform(rotate(20deg));
+      }
+    }
+  }
+}

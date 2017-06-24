@@ -1,0 +1,103 @@
+/*----------------------------------*\
+    Carousel
+\*----------------------------------*/
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=a65a04905f5fd687df3594a057d75080)
+ * Config saved to config.json and https://gist.github.com/a65a04905f5fd687df3594a057d75080
+ */
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner .item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(600ms);
+  &.active{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.carousel-indicators {
+  position: relative;
+  z-index: 15;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  text-indent: -999px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: black;
+  margin-right: 5px;
+  margin-left: 5px;
+  position: relative;
+  @include transition(300ms linear);
+  &:hover{
+    background-color: $color-green;
+  }
+  &::after{
+    width: 0px;
+    height: 2px;
+    left: 8px;
+    background-color: $color-green;
+    content: "";
+    top: 3px;
+    position: absolute;
+    @include transition(300ms linear)
+  }
+}
+.carousel-indicators .active {
+  background-color: $color-green;
+  margin-right: 54px;
+  &:after{
+    width: 48px;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption .btn {
+  text-shadow: none;
+}
+.carousel__front{
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+}

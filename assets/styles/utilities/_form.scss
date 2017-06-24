@@ -1,0 +1,56 @@
+/*----------------------------------*\
+		Form
+\*----------------------------------*/
+
+.material{
+	position: relative;
+	padding: 0;
+	border: none;
+	overflow: visible;
+	input{
+		outline: none;
+		border: 0;
+		border-bottom: solid 1px #b9b9b9;
+		font-size: 21px;
+		box-sizing: border-box;
+		margin: 0;
+		width: 100%;
+		&:focus+hr{
+			@include transform(scaleX(1));
+		}
+	}
+	hr{
+		position: absolute;
+		margin:0;
+		bottom: 0;
+		left:0;
+		width: 100%;
+		height: 3px;
+		background-color: $color-green;
+		@include transform(scaleX(0));
+		@include transition();
+	}
+	@media #{$sm-down} {
+		width: 100%;
+	}
+}
+textarea{
+	resize: vertical;
+	max-width: 100%;
+	min-height: 120px;
+}
+label{
+	cursor: pointer
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: $color-black;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+	color: $color-black;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+	color: $color-black;
+}
+input:-moz-placeholder { /* Firefox 18- */
+	color: $color-black;
+}

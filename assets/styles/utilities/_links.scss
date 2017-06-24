@@ -1,0 +1,41 @@
+/*----------------------------------*\
+    Links
+\*----------------------------------*/
+.link{
+  &--normal{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &--mark{
+    @include transition();
+    &:hover{
+      background: linear-gradient(to top, transparent 0%, transparent 20%, $color-green 21%, $color-green 50%, transparent 51%,transparent 100%);
+    }
+  }
+  &--arrow{
+    position: relative;
+    padding-right: 35px;
+    font-weight: 600;
+    font-family: $font-secondary;
+    font-size: 16px;
+    &:after{
+      content: url(../images/ArrowGreen.svg);
+      position: absolute;
+      right: 5px;
+      @include transition();
+    }
+    &:hover{
+      &:after{
+        right: 0;
+      }
+    }
+  }
+  &--light{
+    color: $color-green-light;
+    @include transition();
+    &:hover{
+      color: $color-green;
+    }
+  }
+}

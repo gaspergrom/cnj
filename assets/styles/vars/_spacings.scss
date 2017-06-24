@@ -1,0 +1,24 @@
+/*----------------------------------*\
+    color variables
+\*----------------------------------*/
+
+
+/* sizes of padding and margin */
+$sizes: 5, 10, 15, 20, 30, 45, 60, 90, 150;
+
+/* prefixes */
+$contains: (
+        'pt': padding-top,
+        'pb': padding-bottom,
+        'pr': padding-right,
+        'pl': padding-left,
+        'mt': margin-top,
+        'mb': margin-bottom,
+        'mr': margin-right,
+        'ml': margin-left
+);
+
+/* responsive spacings */
+$spacing-md: 'false';
+$spacing-sm: 'true';
+$spacing-xs: 'false';

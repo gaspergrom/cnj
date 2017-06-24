@@ -1,0 +1,28 @@
+/*----------------------------------*\
+    color variables
+\*----------------------------------*/
+
+/* color variables */
+$color-white: #fff;
+$color-black: #000;
+$color-green: #80B541;
+$color-green-alpha: rgba(128, 181, 65, 0.1);
+$color-green-light: #B6BF8C;
+$color-grey-light: #EAECE1;
+$color-grey: #9B9B9B;
+$color-grey-dark:#4E4E4E;
+/* colors you want to include in text and background */
+$colors: (
+
+        'white': $color-white,
+        'green': $color-green,
+        'grey': $color-grey,
+        'green-alpha': $color-green-alpha,
+
+);
+
+
+/* percentage of darkening color */
+$darken: 5%;
+/* percentage of lightening color */
+$lighten: 8%;
